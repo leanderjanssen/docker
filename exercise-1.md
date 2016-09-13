@@ -7,7 +7,7 @@ docker run ubuntu:14.04 echo "Hello World"
 ```
 
 ### Task 2 - Run another container
-Then type:
+Type:
 ```
 docker run ubuntu:14.04 ps -ef
 ```
@@ -23,10 +23,10 @@ There should not be running any active containers.
 ```
 docker ps -a
 ```
-Now you should all running and stooped containers.
+Now you should see all running and stopped containers.
 
 ### Task 5 - The immutable container
-Create another container.
+Create another container and attach both STDIN and a terminal:
 ```
 docker run -i -t ubuntu:14.04 bash
 ```
@@ -115,7 +115,7 @@ Let's try it with a bit of force:
 docker rm -f nginx
 ```
 
-Cleaning up all stopped containers using a single command:
+Let's clean up the mess you've created during this exercise, using some shell magic:
 ```
 docker rm $(docker ps -aq)
 ```
