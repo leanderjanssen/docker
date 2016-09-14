@@ -38,7 +38,7 @@ docker volume inspect test1
 ```
 The `Mountpoint` field contains the path to your volume.  
 
-Elevate your privileges to root, by typing `sudo -i`.  
+Elevate your privileges to root, by typing `sudo -i`  
 
 Change directory into the volume path (`/var/lib/docker/volumes/...`).  
 Run `ls` and verify you can see the `test.txt` file you've created earlier.  
