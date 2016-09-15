@@ -66,7 +66,7 @@ Edit the Dockerfile and write the following lines:
 FROM ubuntu:14.04
 
 RUN apt-get update
-RUN apt-get install -u wget
+RUN apt-get install -y wget
 ```
 You can use `vim` or `nano` as your editor.  
 
